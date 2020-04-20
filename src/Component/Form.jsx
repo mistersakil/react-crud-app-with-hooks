@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, Fragment} from "react";
 
 export default function Form(props) {
 	const defaultUserInfo = {id:null, name:'', email:''}
@@ -23,6 +23,7 @@ export default function Form(props) {
 
 	}
 	return (	        
+	    <Fragment>
 	    <form onSubmit={formSubmitHandler} className="was-validated text-left">
 	      	<div className="form-group">
 		        <label htmlFor="name">Fullname:</label>
@@ -48,5 +49,14 @@ export default function Form(props) {
 		  	}
 			
 	    </form>
+	    <blockquote class="blockquote mt-5">
+		  	<div class="jumbotron bg-secondary text-light">	
+		  		<p>
+		   		Since I'm not using a real API and Database, which would probably have an auto-incrementing ID, I'm going to increment the ID of the new user manually. Initially I have been used useState() and useEffect() Hooks and added few default User's for demonstrating purpose
+		   		</p>
+			</div>		   
+		   <footer class="blockquote-footer"><a href="https://www.upwork.com/o/companies/~011335ddde8074293a/" target="_blank">Let's Hire Me UpWork.com</a> : Credit Goes To <a href="https://www.taniarascia.com/" target="_blank">Tania Rascia</a></footer>
+		</blockquote>
+		</Fragment>
 	);
 }

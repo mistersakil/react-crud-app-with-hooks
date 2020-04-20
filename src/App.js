@@ -5,9 +5,9 @@ import FormUpdate from './Component/FormUpdate'
 function App() {
   const tableFields = ['ID', 'Name','Email','Actions']
   const initianData = [
-    {id: 1, name: '1-default', email: '1default@user.com'},
-    {id: 2, name: '2-default', email: '2default@user.com'},
-    {id: 3, name: '3-default', email: '3default@user.com'},
+    {id: 1, name: 'User 1', email: 'mister.sakil.cse@gmail.com'},
+    {id: 2, name: 'User 2', email: 'sakilorb@gmail.com'},
+    {id: 3, name: 'User 3', email: 'sakilorb@icloud.com'},
   ]
 
   const [users, setUsers] = useState(initianData)  
