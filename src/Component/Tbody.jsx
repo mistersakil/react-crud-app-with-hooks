@@ -8,12 +8,12 @@ const Tbody = props => {
 		rowMap = props.tableData.map((singleObject, index) => {
 			return (
 				<tr key={index}>
-					{ Object.keys(singleObject).map((key, index) => (<td key={index}>{singleObject[key]}</td>)) }
+					{ Object.keys(singleObject).map((key, index) => (<td key={index}>{ singleObject[key]}</td>)) }
 					<td style={{minWidth: "100px"}}>
-						<button onClick={() => props.objectDeleteHandler(index)} className="btn btn-warning">Edit</button> 
+						<button onClick={() => props.rowDeleteHandler(singleObject.id)} className="btn btn-danger">Delete</button> 
 						<span> / </span>
 
-						<button onClick={() => props.objectDeleteHandler(index)} className="btn btn-danger">Delete</button>
+						<button onClick={() => props.rowUpdateHandler(singleObject)} className="btn btn-warning">Edit</button>
 					</td>
 				</tr>
 			)

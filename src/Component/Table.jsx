@@ -7,7 +7,7 @@ const Table = props => {
 		<div className="table-responsive">
 		<table className="table table-bordered table-hover table-striped">
 			<Thead tableFields={props.tableFields}/>
-			<Tbody tableData={props.tableData} noOfFields={props.tableFields.length} />
+			<Tbody tableData={props.tableData} noOfFields={props.tableFields.length} rowDeleteHandler={props.rowDeleteHandler} rowUpdateHandler={props.rowUpdateHandler} />
 		</table>
 		</div>
 	)
