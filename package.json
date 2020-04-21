@@ -1,5 +1,6 @@
 {
   "name": "react-crud-app-with-hooks",
+  "homepage": "http://z-category.com/demo/react-crud-app-with-hooks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Fragment} from 'react';
+import React, {useState, Fragment} from 'react';
 import Table from './Component/Table'
 import Form from './Component/Form'
 import FormUpdate from './Component/FormUpdate'

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Thead from './Thead'
 import Tbody from './Tbody'
 

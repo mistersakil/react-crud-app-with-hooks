@@ -4,7 +4,6 @@ export default function FormUpdate(props) {
 	
 	const [user, setUser] = useState(props.updatingUser)
 	const [required, setRequired] = useState(false)
-	const {name, email} = user
 	const inputHandler = event => {
 		const {name, value} = event.target
 		setUser({...user, [name] : value})
