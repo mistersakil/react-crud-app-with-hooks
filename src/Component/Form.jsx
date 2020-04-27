@@ -54,9 +54,14 @@ export default function Form(props) {
 		  		<p>
 		   		Since I'm not using a real API and Database, which would probably have an auto-incrementing ID, I'm going to increment the ID of the new user manually. Initially I have been used useState() and useEffect() Hooks and added few default User's for demonstrating purpose. Bootstrap V4 is used for UY design
 		   		</p>
-		   		<a href="http://z-category.com/demo/react-crud-app-with-hooks/" className="btn btn-info btn-lg">Demo</a>
+		   		<a href="https://github.com/mistersakil/react-crud-app-with-hooks-and-contextapi" target="_blank" className="btn btn-warning btn-lg">Github (Source Code)</a>
 			</div>		   
-		   <footer className="blockquote-footer"><a href="https://www.upwork.com/o/companies/~011335ddde8074293a/" target="_blank">Let's Hire Me UpWork.com</a> : Credit Goes To <a href="https://www.taniarascia.com/" target="_blank">Tania Rascia</a></footer>
+		   <footer className="blockquote-footer">
+		   <a href="https://www.upwork.com/o/companies/~011335ddde8074293a/" target="_blank">Let's Hire Me UpWork.com</a> 
+		   : Thankfull To <a href="https://www.taniarascia.com/" target="_blank">Tania Rascia</a> <span> & </span>
+		   <a href="https://www.youtube.com/channel/UCrmHQdRbYKFsB602Duho4Tw" target="_blank">Stack Learner</a> <span> & </span>
+		   <a href="https://www.youtube.com/channel/UCc5FkTYiWH5L3Gk5IyW6Rmw" target="_blank">Geeky Shows</a> 
+		   </footer>
 		</blockquote>
 		</Fragment>
 	);

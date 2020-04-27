@@ -1,7 +1,12 @@
 import React, {useState, Fragment} from 'react';
-import Table from './Component/Table'
-import Form from './Component/Form'
-import FormUpdate from './Component/FormUpdate'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Table from './Table'
+import Form from './Form'
+import FormUpdate from './FormUpdate'
+import Menu from './Menu'
+import Users from './Users'
+
+
 function App() {
   const tableFields = ['ID', 'Name','Email','Actions']
   const initianData = [
@@ -51,14 +56,7 @@ function App() {
   return (
     <div className="container-fluid">
       <div className="row">      
-        <div className="col-sm-12">
-          
-          <div className="jumbotron jumbotron-fluid">
-            <div className="container">
-              <h1 className="text-center">React CRUD App With Hooks </h1>
-            </div>
-          </div>
-        </div>
+       
         <div className="col-sm-12">
           <div className="card-deck">
             <div className="card bg-light">
@@ -90,7 +88,10 @@ function App() {
           </div>
         </div>
       </div>
+
+
     </div>
+
   );
 }
 
